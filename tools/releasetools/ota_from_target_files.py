@@ -677,19 +677,19 @@ reboot_now("%(bcb_dev)s", "recovery");
 else if get_stage("%(bcb_dev)s") == "3/3" then
 """ % bcb_dev)
 
-  script.Print(" ");
-  script.Print("               ___  _   _    __  __          ");
-  script.Print("              | _ \/_\ | |  |  \/  |         ");
-  script.Print("              |  _/ _ \| |__| |\/| |         ");
-  script.Print("              |_|/_/ \_\____|_|  |_|         ");
-  script.Print("          ___ ___  ___     _ ___ ___ _____   ");
-  script.Print("         | _ \ _ \/ _ \ _ | | __/ __|_   _|  ");
-  script.Print("         |  _/   / (_) | || | _| (__  | |    ");
-  script.Print("         |_| |_|_|\___/ \__/|___\___| |_|    ");
-  script.Print("                                             ");
-  script.Print("              -= Palm Project 14.1 =-        "); 
-  script.Print("                                             "); 
-  script.Print(" ");
+  script.Print(" ")
+  script.Print("               ___  _   _    __  __          ")
+  script.Print("              | _ \/_\ | |  |  \/  |         ")
+  script.Print("              |  _/ _ \| |__| |\/| |         ")
+  script.Print("              |_|/_/ \_\____|_|  |_|         ")
+  script.Print("          ___ ___  ___     _ ___ ___ _____   ")
+  script.Print("         | _ \ _ \/ _ \ _ | | __/ __|_   _|  ")
+  script.Print("         |  _/   / (_) | || | _| (__  | |    ")
+  script.Print("         |_| |_|_|\___/ \__/|___\___| |_|    ")
+  script.Print("                                             ")
+  script.Print("              -= Palm Project 14.1 =-        ")
+  script.Print("                                             ")
+  script.Print(" ")
   script.AppendExtra("sleep (2);")
   script.AppendExtra("ifelse(is_mounted(\"/system\"), unmount(\"/system\"));")
   device_specific.FullOTA_InstallBegin()
